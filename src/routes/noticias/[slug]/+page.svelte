@@ -1,8 +1,12 @@
 <script>
     export let data;
     const { metadata, html } = data;
-    // console.log(data.metadata);
 </script>
+
+<svelte:head>
+    <title>{metadata.title}</title>
+    <meta name="description" content={metadata.summary} />
+</svelte:head>
 
 <article>
     <h1>{metadata.title}</h1>
