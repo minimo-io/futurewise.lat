@@ -20,7 +20,7 @@
 <div>
     <Button color="primary" class="my-4">Primary</Button>
     <Alert color="primary" class="my-4">Primary</Alert>
-    <Card href="/cards" color="primary" class="my-4">
+    <Card href="#" color="primary" class="my-4">
         <h5
             class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-red-800"
         >
