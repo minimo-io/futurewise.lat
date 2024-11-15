@@ -22,13 +22,6 @@
             >
                 <a href="/noticias">Noticias</a>
             </li>
-            <li
-                aria-current={$page.url.pathname.startsWith("/sverdle")
-                    ? "page"
-                    : undefined}
-            >
-                <a href="/sverdle">Sverdle</a>
-            </li>
         </ul>
     </nav>
 </header>
