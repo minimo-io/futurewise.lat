@@ -67,7 +67,6 @@
         </NavUl>
     </Navbar>
 </header>
-{activeUrl}
 
 <style>
 </style>
