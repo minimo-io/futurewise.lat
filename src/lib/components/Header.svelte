@@ -15,7 +15,9 @@
         ArrowRightOutline,
     } from "flowbite-svelte-icons";
     import { page } from "$app/stores";
-    $: activeUrl = $page.url.pathname;
+
+    // $: activeUrl = $page.url.pathname;
+    let activeUrl = $derived($page.url.pathname);
 
     import logo from "$lib/images/logo.svg";
 </script>
@@ -65,6 +67,7 @@
         </NavUl>
     </Navbar>
 </header>
+{activeUrl}
 
 <style>
 </style>
