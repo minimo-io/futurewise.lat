@@ -14,7 +14,7 @@ const config = {
         adapter: adapter(),
         alias: {
             $types: "src/types", // Define your alias here
-            $components: "src/components", // Example for components
+            $components: "src/lib/components", // Example for components
         },
     },
     compilerOptions: {},

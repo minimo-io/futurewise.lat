@@ -12,3 +12,32 @@
 p {
     font-family: var(--font-mono);
 }
+
+@layer utilities {
+    .partial-border {
+        position: relative; /* Necessary for absolute positioning of pseudo-element */
+    }
+
+    .partial-border::after {
+        --partial-border-height: 7px;
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        width: 93%;
+        height: var(--partial-border-height);
+        border-bottom: var(--partial-border-height) solid #ffbcad;
+    }
+
+    @media (max-width: 768px) {
+        .partial-border::after {
+            --partial-border-height: 4px;
+            bottom: -1px;
+        }
+    }
+    .partial-border-sm::after {
+        --partial-border-height: 2px;
+        bottom: -2px;
+        width: 100%;
+    }
+}
