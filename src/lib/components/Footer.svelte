@@ -6,7 +6,7 @@
         FooterBrand,
         FooterLink,
     } from "flowbite-svelte";
-
+    import logo from "$lib/images/logo.svg";
     const fullYear = new Date().getFullYear();
 </script>
 
@@ -14,7 +14,7 @@
     <div class="sm:flex sm:items-center sm:justify-between">
         <FooterBrand
             href="https://flowbite.com"
-            src="./logo.svg"
+            src={logo}
             alt="Neural ninja logo"
             name="NeuralNinja"
         />
