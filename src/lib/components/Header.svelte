@@ -10,26 +10,32 @@
         DropdownDivider,
         Button,
     } from "flowbite-svelte";
-    import { ChevronDownOutline } from "flowbite-svelte-icons";
+    import {
+        ChevronDownOutline,
+        ArrowRightOutline,
+    } from "flowbite-svelte-icons";
     import { page } from "$app/stores";
     $: activeUrl = $page.url.pathname;
 
     import logo from "$lib/images/logo.svg";
 </script>
 
-<header class="relative mb-10 border-b w-full">
-    <Navbar
-        class="mx-auto sm:px-0 px-5 Xfixed max-w-screen-lg Xtop-0 Xstart-0 z-20"
-    >
+<header class="relative border-b w-full bg-white z-10">
+    <Navbar class="mx-auto sm:px-0 px-5 max-w-screen-lg z-20">
         <NavBrand href="/">
-            <img src={logo} class="me-3 h-6 sm:h-9" alt="Flowbite Logo" />
+            <img src={logo} class="me-3 h-6 sm:h-9" alt="Neural ninja logo" />
             <span
                 class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
                 >NeuralNinja</span
             >
         </NavBrand>
         <div class="flex md:order-2">
-            <Button size="sm">Junte-se grátis</Button>
+            <Button
+                href="#"
+                size="sm"
+                class="px-3 md:px-4 h-[30px] md:h-auto self-center"
+                >Junte-se<ArrowRightOutline class="w-5 h-5 ms-1" /></Button
+            >
             <NavHamburger />
         </div>
         <!-- <NavHamburger /> -->
@@ -55,11 +61,7 @@
             </Dropdown>
             <NavLi href="/noticias">Notícias</NavLi>
             <NavLi href="#">Treinamentos</NavLi>
-            <NavLi
-                href="https://www.instagram.com/neuralninja.brasil"
-                target="_blank"
-                rel="nofollow noopener">Sobre nós</NavLi
-            >
+            <NavLi href="/sobre-nos">Sobre nós</NavLi>
         </NavUl>
     </Navbar>
 </header>

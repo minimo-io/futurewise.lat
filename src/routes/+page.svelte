@@ -1,17 +1,12 @@
 <script lang="ts">
     import Newsletter from "$components/Newsletter.svelte";
+    import { onMount } from "svelte";
     import LatestArticles from "$components/LatestArticles.svelte";
-    import {
-        Button,
-        Alert,
-        Card,
-        Navbar,
-        NavBrand,
-        NavLi,
-        NavUl,
-        NavHamburger,
-        Toast,
-    } from "flowbite-svelte";
+
+    onMount(() => {
+        loadParticles();
+        // alert("hello");
+    });
 </script>
 
 <svelte:head>
@@ -19,8 +14,10 @@
     <meta name="description" content="Seja um ninja das redes neuronais" />
 </svelte:head>
 
-<Newsletter />
-
-<div class="border-t mt-20">
+<section class="relative py-20 Xbg-white">
+    <Newsletter />
+    <div id="particles-js" class="relative -z-[10]"></div>
+</section>
+<div class="border-t">
     <LatestArticles />
 </div>

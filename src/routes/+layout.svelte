@@ -9,7 +9,7 @@
 <div class="px-0 mx-auto">
     <Header />
 
-    <main class="py-5">
+    <main>
         {@render children()}
     </main>
 

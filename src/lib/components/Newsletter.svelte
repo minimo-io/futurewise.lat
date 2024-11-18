@@ -3,7 +3,7 @@
     let email = "";
 </script>
 
-<section>
+<section class="z-10">
     <div class="container mx-auto px-4">
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-5xl font-bold mb-4 font-sans">
