@@ -41,18 +41,24 @@
                 />
             </NavLi>
             <Dropdown class="w-44 z-20">
-                <DropdownItem href="#">Dashboard</DropdownItem>
-                <DropdownItem href="#">Settings</DropdownItem>
-                <DropdownItem href="#">Earnings</DropdownItem>
+                <DropdownItem href="#">Produtividade</DropdownItem>
+                <DropdownItem href="#">Marketing</DropdownItem>
+                <DropdownItem href="#">Negócios</DropdownItem>
+                <DropdownItem href="#">Design</DropdownItem>
+                <DropdownItem href="#">Programação</DropdownItem>
+                <DropdownItem href="#">Carreira</DropdownItem>
+                <DropdownItem href="#">Finanças</DropdownItem>
+                <DropdownItem href="#">Gerenciamento de projetos</DropdownItem>
+                <DropdownItem href="#">Edição de vídeo</DropdownItem>
                 <DropdownDivider />
-                <DropdownItem href="#">Sign out</DropdownItem>
+                <DropdownItem href="#">Ver todas</DropdownItem>
             </Dropdown>
             <NavLi href="/noticias">Notícias</NavLi>
             <NavLi href="#">Treinamentos</NavLi>
             <NavLi
                 href="https://www.instagram.com/neuralninja.brasil"
                 target="_blank"
-                rel="nofollow noopener">Contato</NavLi
+                rel="nofollow noopener">Sobre nós</NavLi
             >
         </NavUl>
     </Navbar>

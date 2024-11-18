@@ -6,16 +6,15 @@
 <section>
     <div class="container mx-auto px-4">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-4">
+            <h2 class="text-5xl font-bold mb-4 font-sans">
                 Impulsione a sua vida com <br /> o
-                <span class="partial-border">poder da IA</span>
+                <span class="partial-border text-primary-700">poder da IA</span>
             </h2>
             <p class="text-gray-600 my-8">
                 Aprenda como aproveitar a inteligência artificial para aumentar
-                sua produtividade. Fique por dentro, das notícias, ferramentas e
-                treinamentos<br />
-                <span class="font-semibold">toda terça-feira</span>
-                no se Inbox.
+                sua produtividade. Fique por dentro das ferramentas, notícias e
+                treinamentos,<br />
+                <strong>toda terça-feira no se Inbox</strong>.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <Input
