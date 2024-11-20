@@ -19,13 +19,13 @@
     // $: activeUrl = $page.url.pathname;
     let activeUrl = $derived($page.url.pathname);
 
-    import logo from "$lib/images/logo.svg";
+    import logo from "$lib/images/logo-nn.svg";
 </script>
 
 <header class="relative border-b w-full bg-white z-10">
     <Navbar class="mx-auto sm:px-0 px-5 max-w-screen-lg z-20">
         <NavBrand href="/">
-            <img src={logo} class="me-3 h-6 sm:h-9" alt="Neural ninja logo" />
+            <img src={logo} class="me-3 h-6 sm:h-7" alt="Neural ninja logo" />
             <span
                 class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
                 >NeuralNinja</span
@@ -36,7 +36,9 @@
                 href="#"
                 size="sm"
                 class="px-3 md:px-4 h-[30px] md:h-auto self-center"
-                >Junte-se<ArrowRightOutline class="w-5 h-5 ms-1" /></Button
+                >Junte-se<ArrowRightOutline
+                    class="w-5 h-5 ms-1 hidden md:inline"
+                /></Button
             >
             <NavHamburger />
         </div>
