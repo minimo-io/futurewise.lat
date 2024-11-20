@@ -6,7 +6,7 @@
         FooterBrand,
         FooterLink,
     } from "flowbite-svelte";
-    import logo from "$lib/images/logo.svg";
+    import logo from "$lib/images/logo-nn.svg";
     const fullYear = new Date().getFullYear();
 </script>
 
