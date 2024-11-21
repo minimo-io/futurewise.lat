@@ -5,22 +5,19 @@
     const articles = [
         {
             title: "The Future of GPT-4 and Its Impact on Industries",
-            description:
-                "Explore how GPT-4 is revolutionizing various sectors and what it means for the future of AI.",
+            description: "Explore how GPT-4 is revolutionizing various sectors and what it means for the future of AI.",
             image: "https://placehold.co/600x400",
             date: "March 15, 2024",
         },
         {
             title: "Getting Started with Machine Learning in 2024",
-            description:
-                "A comprehensive guide for beginners looking to start their journey in machine learning.",
+            description: "A comprehensive guide for beginners looking to start their journey in machine learning.",
             image: "https://placehold.co/600x400",
             date: "March 14, 2024",
         },
         {
             title: "Top AI Tools for Developers",
-            description:
-                "Discover the most powerful AI tools that are reshaping the development landscape.",
+            description: "Discover the most powerful AI tools that are reshaping the development landscape.",
             image: "https://placehold.co/600x400",
             date: "March 13, 2024",
         },

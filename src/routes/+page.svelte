@@ -14,10 +14,10 @@
     <meta name="description" content="Seja um ninja das redes neuronais" />
 </svelte:head>
 
-<section class="relative py-20 Xbg-white">
+<section class="relative py-10 md:py-20 bg-gray-100 px-5 md:px-auto">
     <Newsletter />
-    <div id="particles-js" class="relative -z-[10]"></div>
+    <div id="particles-js" class="relative z-10"></div>
 </section>
-<div class="border-t">
+<div class="border-t px-5 md:px-auto">
     <LatestArticles />
 </div>
