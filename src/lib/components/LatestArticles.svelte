@@ -12,12 +12,12 @@
             link: "/noticias/open-ai-lanca-modo-de-voz-avancado-no-navegador",
         },
         {
-            title: "Getting Started with Machine Learning in 2024",
+            title: "OpenAI Considera Desafiar o Google com um Navegador",
             description:
-                "A comprehensive guide for beginners looking to start their journey in machine learning.",
-            image: "https://placehold.co/600x400",
-            date: "March 14, 2024",
-            link: "/noticias/open-ai-lanca-modo-de-voz-avancado-no-navegador",
+                "A OpenAI está supostamente desenvolvendo um navegador de internet baseado em ChatGPT, para desafiar diretamente o Google no mercado de busca.",
+            image: "/post-images/openai-chrome-google.jpg",
+            date: "22 Novembro, 2024",
+            link: "/noticias/OpenAI-considera-desafiar-o-Google-com-um-navegador",
         },
         {
             title: "Top AI Tools for Developers",

@@ -16,6 +16,12 @@
         customSize="text-3xl font-extrabold  md:text-5xl text-center md:text-left px-4 md:px-0"
         >{metadata.title}</Heading
     >
+    <Heading
+        tag="h2"
+        class="mb-4"
+        customSize="text-lg leading-[110%] md:leading-[120%] font-thin text-white md:text-2xl text-center md:text-left px-4 md:px-0"
+        >{metadata.summary}</Heading
+    >
     <p class="text-center md:text-left text-gray-400">
         <i>Publicado:</i>
         <time>{new Date(metadata.created).toLocaleDateString()}</time>
@@ -30,10 +36,9 @@
     <div class="my-7 px-4 md:px-0">
         {@html html}
     </div>
+    <ol class="px-4 md:px-0">
+        {#each metadata.tags as tag}
+            <li><a href="/?tag={tag}"> #{tag} </a></li>
+        {/each}
+    </ol>
 </article>
-
-<ol>
-    {#each metadata.tags as tag}
-        <li><a href="/?tag={tag}"> #{tag} </a></li>
-    {/each}
-</ol>
