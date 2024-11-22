@@ -1,8 +1,17 @@
 <script lang="ts">
     import { Button, Input } from "flowbite-svelte";
-    import { onMount } from "svelte";
-    let email = "";
+    import { confetti } from "@neoconfetti/svelte";
+    import { onMount, tick } from "svelte";
+    let email = $state();
+
+    let isVisible = $state(false);
 </script>
+
+{#if isVisible}
+    <div class="confetti">
+        <div use:confetti></div>
+    </div>
+{/if}
 
 <section>
     <div class="container mx-auto px-4">
@@ -13,8 +22,9 @@
                 <span class="partial-border text-primary-700">poder da IA</span>
             </h2>
             <p class="text-gray-600 my-8 text-sm md:text-base">
-                Aprenda como aproveitar a inteligência artificial para aumentar sua produtividade. Fique por dentro das
-                ferramentas, notícias e treinamentos,
+                Aprenda como aproveitar a inteligência artificial para aumentar
+                sua produtividade. Fique por dentro das ferramentas, notícias e
+                treinamentos,
                 <br />
                 <strong>toda terça-feira no se Inbox</strong>
                 .
@@ -25,11 +35,29 @@
                     placeholder="Digite seu email"
                     bind:value={email}
                     size="lg"
-                    class="flex-1 max-w-md border-2 border-primary-700 z-20"
+                    class="flex-1 max-w-md border-2 bg-white border-primary-700 z-20"
                     autofocus
                 />
-                <Button size="lg" color="primary" class="z-20">Inscreva-se grátis</Button>
+                <Button
+                    onclick={async () => {
+                        // isVisible = false;
+                        // await tick();
+                        // isVisible = true;
+                        document.location =
+                            "https://neuralninjabrasil.beehiiv.com/subscribe";
+                    }}
+                    size="lg"
+                    color="primary"
+                    class="z-20">Inscreva-se grátis</Button
+                >
             </div>
         </div>
     </div>
 </section>
+
+<style>
+    div.confetti {
+        display: flex;
+        justify-content: center;
+    }
+</style>

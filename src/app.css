@@ -24,6 +24,18 @@
         background-size: cover;
         background-position: 50% 50%;
     }
+    .nn-content p,
+    .nn-content li {
+        @apply my-2 font-light;
+    }
+    .nn-content li {
+        @apply my-4;
+    }
+    .nn-content p {
+    }
+    .nn-content ul {
+        @apply list-decimal list-inside my-10 marker:font-bold;
+    }
 }
 
 @layer utilities {

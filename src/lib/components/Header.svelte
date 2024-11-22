@@ -38,7 +38,7 @@
                 size="sm"
                 class="px-3 md:px-4 h-[30px] md:h-auto self-center"
             >
-                Junte-se<ArrowRightOutline
+                Acesse<ArrowRightOutline
                     class="w-5 h-5 ms-1 hidden md:inline"
                 />
             </Button>
@@ -52,21 +52,27 @@
                     class="w-6 h-6 ms-2 text-primary-800 dark:text-white inline"
                 />
             </NavLi>
-            <Dropdown class="w-44 z-20">
-                <DropdownItem href="#">Produtividade</DropdownItem>
-                <DropdownItem href="#">Marketing</DropdownItem>
-                <DropdownItem href="#">Negócios</DropdownItem>
-                <DropdownItem href="#">Design</DropdownItem>
-                <DropdownItem href="#">Programação</DropdownItem>
-                <DropdownItem href="#">Carreira</DropdownItem>
-                <DropdownItem href="#">Finanças</DropdownItem>
-                <DropdownItem href="#">Gerenciamento de projetos</DropdownItem>
-                <DropdownItem href="#">Edição de vídeo</DropdownItem>
+            <Dropdown class="w-44 z-30">
+                <DropdownItem class="z-30" href="#"
+                    ><strong>✨ Gratuitas</strong></DropdownItem
+                >
                 <DropdownDivider />
-                <DropdownItem href="#">Ver todas</DropdownItem>
+                <DropdownItem class="z-30" href="#">Produtividade</DropdownItem>
+                <DropdownItem class="z-30" href="#">Finanças</DropdownItem>
+                <DropdownItem class="z-30" href="#">Programação</DropdownItem>
+                <DropdownItem class="z-30" href="#">Negócios</DropdownItem>
+                <DropdownItem class="z-30" href="#">Design</DropdownItem>
+                <!--
+                <DropdownItem href="#">Marketing</DropdownItem>
+                <DropdownItem href="#">Gerenciamento de projetos</DropdownItem>
+                <DropdownItem href="#">Carreira</DropdownItem>
+                <DropdownItem href="#">Edição de vídeo</DropdownItem>
+                -->
+                <DropdownDivider />
+                <DropdownItem class="z-30" href="#">Ver todas</DropdownItem>
             </Dropdown>
             <NavLi href="#">Treinamentos</NavLi>
-            <NavLi href="/noticias">Notícias</NavLi>
+            <NavLi href="/#noticias">Notícias</NavLi>
             <NavLi href="#">Top LLMs</NavLi>
         </NavUl>
     </Navbar>

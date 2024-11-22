@@ -1,9 +1,10 @@
 ---
 title: "Seja um ninja das redes neuronais"
-image: "/post-images/neural-ninja-1.png"
+image: "/post-images/neural-ninja-3.png"
 youtubeId: "CF1tMjvHDRA"
 created: "2024-11-15"
 summary: "asdadas!"
+editorial: true
 tags:
     - "IA"
     - "Ninja"
