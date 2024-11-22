@@ -4,6 +4,7 @@
     export let description;
     export let image;
     export let date;
+    export let link;
 </script>
 
 <!-- <Card img={image} class="h-full">
@@ -19,8 +20,10 @@
     <slot />
 </Card> -->
 
-<Card href="#" img={image} color="primary" class="my-4">
-    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-red-800">
+<Card href={link} img={image} color="primary" class="my-4 hover:opacity-80">
+    <h5
+        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-red-800"
+    >
         {title}
     </h5>
     <p class="text-sm text-gray-500 mb-3">{date}</p>
