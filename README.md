@@ -1,6 +1,7 @@
 # Neural Ninja
 
--   https://www.delphic.top/blog/making_a_blog_website_with_sveltekit
+-   Define structure for emails/posts (AI NEWS; ART; TOOLS, etc)
+-   Pagination
 
 ## sv
 
