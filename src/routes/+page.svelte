@@ -2,6 +2,7 @@
     import Newsletter from "$components/Newsletter.svelte";
     import { onMount } from "svelte";
     import LatestArticles from "$components/LatestArticles.svelte";
+    import TopBoxes from "$components/TopBoxes.svelte";
     import type { PageData } from "./$types";
     import bgImage from "$lib/images/futurewise-yellow.png";
 
@@ -33,8 +34,9 @@
     ></div>
     <!-- background-position: 310px -50px -->
 
-    <div id="particles-js" class="relative z-10"></div>
+    <div id="particles-js" class="z-10"></div>
 </section>
+<TopBoxes class="border-t border-t-black" />
 <div class="border-t border-t-black px-5 md:px-auto">
     <LatestArticles {posts} />
 </div>

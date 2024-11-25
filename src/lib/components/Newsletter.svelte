@@ -23,13 +23,12 @@
                     >poder da IA</span
                 >
             </h2>
-            <p class="text-gray-600 my-8 text-sm md:text-base">
-                Aprenda como aproveitar a inteligência artificial para aumentar
+            <p class="text-gray-700 my-8 text-sm md:text-base">
+                Aprenda cómo aproveitar a inteligência artificial para aumentar
                 sua produtividade. Fique por dentro das ferramentas, notícias e
                 treinamentos,
                 <br />
-                <strong>toda terça-feira no se Inbox</strong>
-                .
+                <strong>toda terça-feira no se Inbox</strong>.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <Input
@@ -50,7 +49,7 @@
                     }}
                     size="lg"
                     color="primary"
-                    class="z-20 bg-primary-950">Inscreva-se grátis</Button
+                    class="z-20 bg-primary-900">Inscreva-se grátis</Button
                 >
             </div>
         </div>
