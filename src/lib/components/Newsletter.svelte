@@ -13,13 +13,15 @@
     </div>
 {/if}
 
-<section>
+<section class="">
     <div class="container mx-auto px-4">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl md:text-5xl font-bold mb-4 font-sans">
+            <h2 class="text-3xl md:text-5xl mb-4 font-sans">
                 Impulsione a sua vida com <br class="hidden md:inline" />
                 o
-                <span class="partial-border text-primary-700">poder da IA</span>
+                <span class="partial-border text-black font-bold"
+                    >poder da IA</span
+                >
             </h2>
             <p class="text-gray-600 my-8 text-sm md:text-base">
                 Aprenda como aproveitar a inteligência artificial para aumentar
@@ -44,11 +46,11 @@
                         // await tick();
                         // isVisible = true;
                         document.location =
-                            "https://neuralninjabrasil.beehiiv.com/subscribe";
+                            "https://futurewise.beehiiv.com/subscribe";
                     }}
                     size="lg"
                     color="primary"
-                    class="z-20">Inscreva-se grátis</Button
+                    class="z-20 bg-primary-950">Inscreva-se grátis</Button
                 >
             </div>
         </div>

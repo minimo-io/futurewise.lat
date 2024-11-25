@@ -10,6 +10,9 @@
     font-family: var(--font-body);
 }
 @layer base {
+    button {
+        @apply hover:outline hover:outline-primary-300;
+    }
     p {
         font-family: var(--font-mono);
     }
@@ -40,18 +43,29 @@
 
 @layer utilities {
     .partial-border {
-        position: relative; /* Necessary for absolute positioning of pseudo-element */
+        position: relative;
+        display: inline-block;
     }
 
     .partial-border::after {
         --partial-border-height: 7px;
         content: "";
         position: absolute;
-        bottom: 0px;
+        bottom: -5px;
         right: 0;
-        width: 93%;
+        width: 0%; /* Initial width */
         height: var(--partial-border-height);
-        border-bottom: var(--partial-border-height) solid #ffbcad;
+        border-bottom: var(--partial-border-height) solid #f9b826;
+        animation: border-grow 0.5s ease-in-out forwards; /* Animation on page load */
+    }
+
+    @keyframes border-grow {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 93%;
+        }
     }
 
     @media (max-width: 768px) {

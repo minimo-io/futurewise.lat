@@ -6,20 +6,15 @@
         FooterBrand,
         FooterLink,
     } from "flowbite-svelte";
-    import logo from "$lib/images/logo-nn.svg";
+    import logo from "$lib/images/futurewise.svg";
     const fullYear = new Date().getFullYear();
 </script>
 
 <Footer footerType="logo" class="max-w-screen-lg mx-auto shadow-none p-10">
     <div class="sm:flex sm:items-center sm:justify-between">
-        <FooterBrand
-            href="https://neuralninja.com.br"
-            src={logo}
-            alt="Neural ninja logo"
-            name="NeuralNinja"
-        />
+        <FooterBrand href="/" src={logo} alt="Futurewise logo" />
         <FooterLinkGroup
-            ulClass="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400"
+            ulClass="flex flex-wrap items-center mb-6 text-sm text-gray-500 font-light sm:mb-0 dark:text-gray-400"
         >
             <FooterLink href="/sobre-nos">Sobre nós</FooterLink>
             <FooterLink href="/">Ferramentas</FooterLink>
@@ -30,7 +25,7 @@
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <FooterCopyright
         href="/"
-        by="NeuralNinja"
+        by="FutureWise"
         copyrightMessage="by Mínimo. Under CC BY-NC-SA 4.0."
         year={fullYear}
     />
