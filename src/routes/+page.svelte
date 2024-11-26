@@ -26,7 +26,7 @@
     />
 </svelte:head>
 
-<section class="relative py-10 md:py-20 px-5 md:px-auto">
+<section class="relative py-10 md:py-20 px-[32px] md:px-5 md:px-auto">
     <Newsletter />
     <div
         class="relative md:absolute md:top-0 md:right-0 w-full md:w-[1000px] aspect-1 md:h-full bg-[center_center] md:bg-[350px_-70px] bg-cover md:bg-cover bg-no-repeat"
