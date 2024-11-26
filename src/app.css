@@ -7,22 +7,37 @@
     /* --font-body: Roboto, -apple-system, sans-serif; */
     --font-body: "Roboto Mono Variable", monospace;
     --font-mono: "Roboto Mono Variable", monospace;
+    --partial-border-color: #f9b826;
     font-family: var(--font-body);
+}
+*,
+*::after,
+*::before {
+    transition: opacity 0.2s linear;
+    /* outline: 2px solid lime; */
 }
 @layer base {
     body,
     html {
-        @apply overflow-x-hidden;
+        @apply overflow-x-hidden md:overflow-visible;
     }
-    button {
+    button,
+    .fw-btn-hover {
         @apply hover:outline hover:outline-primary-300;
     }
     p {
         font-family: var(--font-mono);
     }
+    pre {
+        max-width: 100%;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        @apply bg-gray-200 py-5 px-7 rounded-xl;
+    }
     #particles-js {
         /* z-index: 9; */
         top: 0;
+        left: 0;
         position: absolute !important;
         background: transparent;
         width: 100%;
@@ -31,18 +46,47 @@
         background-size: cover;
         background-position: 50% 50%;
     }
-    .nn-content p,
-    .nn-content li {
-        @apply my-2 font-light;
+    /* CONTENT BASE FOR ARTICLES & PAGES */
+    .fw-content strong {
+        @apply font-medium;
     }
-    .nn-content li {
-        @apply my-4;
+    .fw-content h2,
+    .fw-content h3 {
+        font-family: var(--font-mono) !important;
+        @apply font-normal my-7 before:content-['♦'] before:text-[#F9A126] before:text-xl before:md:text-2xl before:pr-2 tracking-tight;
+        /* @apply partial-border partial-border-sm; */
     }
-    .nn-content p {
+    .fw-content h2 {
+        @apply md:font-sans text-xl md:text-2xl;
     }
-    .nn-content ul {
-        @apply list-decimal list-inside my-10 marker:font-bold;
+    .fw-content h3 {
+        @apply md:font-sans text-lg md:text-xl mt-5;
     }
+
+    .fw-content p,
+    .fw-content li {
+        @apply my-2 font-light tracking-normal;
+    }
+    .fw-content iframe {
+        @apply my-5;
+    }
+    .fw-content img {
+        @apply my-5 rounded-2xl shadow-none;
+    }
+
+    .fw-content p {
+    }
+    .fw-content ul,
+    .fw-content ol {
+        @apply list-inside marker:font-bold;
+    }
+    .fw-content ul {
+        @apply list-disc;
+    }
+    .fw-content ol {
+        @apply list-decimal;
+    }
+    /* END OF CONTENT BASE FOR ARTICLES & PAGES */
 }
 
 @layer utilities {
@@ -59,7 +103,8 @@
         right: 0;
         width: 0%; /* Initial width */
         height: var(--partial-border-height);
-        border-bottom: var(--partial-border-height) solid #f9b826;
+        border-bottom: var(--partial-border-height) solid
+            var(--partial-border-color);
         animation: border-grow 0.5s ease-in-out forwards; /* Animation on page load */
     }
 
@@ -79,7 +124,7 @@
         }
     }
     .partial-border-sm::after {
-        --partial-border-height: 2px;
+        --partial-border-height: 4px;
         bottom: -2px;
         width: 100%;
     }

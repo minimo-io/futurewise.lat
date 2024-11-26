@@ -22,6 +22,11 @@ export default {
     darkMode: "class",
     theme: {
         extend: {
+            theme: {
+                fontFamily: {
+                    mono: ["Roboto Mono Variable", "monospace"],
+                },
+            },
             colors: {
                 // flowbite-svelte
                 // primary: {

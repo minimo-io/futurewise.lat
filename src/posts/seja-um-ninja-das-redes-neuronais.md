@@ -1,7 +1,6 @@
 ---
 title: "Seja um ninja das redes neuronais"
 image: "/post-images/neural-ninja-3.png"
-youtubeId: "CF1tMjvHDRA"
 created: "2024-11-15"
 summary: "asdadas!"
 editorial: true
@@ -25,9 +24,9 @@ para trás no mercado competitivo.
 
 Com nossa nova plataforma, você terá acesso ilimitado a:
 
--   Ferramentas de IA testadas e aprovadas
--   Notícias e insights sobre a evolução da IA
--   Treinamentos práticos ministrados por especialistas em português
+- Ferramentas de IA testadas e aprovadas
+- Notícias e insights sobre a evolução da IA
+- Treinamentos práticos ministrados por especialistas em português
 
 Assine agora e garanta sua vantagem competitiva no mercado brasileiro de IA.
 
@@ -49,9 +48,9 @@ Bem, aqui está a parte boa: se você é um "Ninja das Redes Neuronais", você t
 
 Bem, não é fácil. Mas, se você está disposto a aprender, a trabalhar duro e a se esforçar, então podemos te ajudar. Aqui estão algumas dicas para começar:
 
--   **Aprenda as Bases**: Comece com os conceitos fundamentais de inteligência artificial, aprendizado de máquina e redes neuronais.
--   **Aprenda com os Melhores**: Estude o trabalho de especialistas em sua área e aprenda com suas experiências.
--   **Pratique, Pratique, Pratique**: A prática é a melhor maneira de se tornar um expert. Portanto, comece trabalhando em projetos reais.
+- **Aprenda as Bases**: Comece com os conceitos fundamentais de inteligência artificial, aprendizado de máquina e redes neuronais.
+- **Aprenda com os Melhores**: Estude o trabalho de especialistas em sua área e aprenda com suas experiências.
+- **Pratique, Pratique, Pratique**: A prática é a melhor maneira de se tornar um expert. Portanto, comece trabalhando em projetos reais.
 
 Nossa plataforma, Neural Ninja, está aqui para ajudá-lo a se tornar o melhor "Ninja das Redes Neuronais" que você possa ser. Nós oferecemos cursos, tutoriais e recursos para ajudá-lo a entender os fundamentos da inteligência artificial e como aplicá-los em práticas realistas.
 

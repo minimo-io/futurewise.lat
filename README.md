@@ -1,7 +1,11 @@
-# Neural Ninja
+# Futurewise
 
--   Define structure for emails/posts (AI NEWS; ART; TOOLS, etc)
--   Pagination
+- Created by.
+- Re-design article grid
+- Define structure for emails/posts (AI NEWS; ART; TOOLS, etc)
+- Pagination
+- Time ago, for articles
+- Login y pricing de PRO (suscripcion anual R$29, una live de Networking e intercambio sobre AI cada semana + Ferramentas e contenido exclusivas)
 
 ## sv
 

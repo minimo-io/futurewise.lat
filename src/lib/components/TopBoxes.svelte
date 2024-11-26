@@ -58,15 +58,15 @@
                         🧰
                     </div>
                     <h2
-                        class="text-lg font-semibold text-gray-800 font-sans my-2 uppercase"
+                        class="text-lg font-semibold text-gray-800 font-sans my-2"
                     >
-                        CURADORIA DE FERRAMENTAS
+                        Curadoria de ferramentas
                     </h2>
                     <p class="text-gray-700 test-sm md:text-base my-2">
                         Descubra as melhores ferramentas de IA do mercado,
                         avaliadas para profissionais de diversas áreas.
                     </p>
-                    <Button href="#" class="my-2" color="light"
+                    <Button href="#" class="my-2 fw-btn-hover" color="light"
                         >VER FERRAMENTAS →</Button
                     >
                 </div>
@@ -81,7 +81,7 @@
                         🎖️
                     </div>
                     <h2
-                        class="text-lg font-semibold text-gray-800 font-sans my-2 uppercase"
+                        class="text-lg font-semibold text-gray-800 font-sans my-2"
                     >
                         Capacitação online para todos os níveis
                     </h2>
@@ -89,7 +89,9 @@
                         Do básico ao avançado, para quem quer aprender IA do
                         zero e gratuitamente.
                     </p>
-                    <Button class="my-2" color="light">MATERIAL GRATUITO</Button
+
+                    <Button href="#" class="my-2 fw-btn-hover" color="light"
+                        >MATERIAL GRATUITO</Button
                     >
                 </div>
             </div>

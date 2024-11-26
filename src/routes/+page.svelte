@@ -32,11 +32,9 @@
         class="relative md:absolute md:top-0 md:right-0 w-full md:w-[1000px] aspect-1 md:h-full bg-[center_center] md:bg-[350px_-70px] bg-cover md:bg-cover bg-no-repeat"
         style="background-image:url({bgImage})"
     ></div>
-    <!-- background-position: 310px -50px -->
-
     <div id="particles-js" class="z-10"></div>
 </section>
-<TopBoxes class="border-t border-t-black" />
+<TopBoxes />
 <div class="border-t border-t-black px-5 md:px-auto">
     <LatestArticles {posts} />
 </div>

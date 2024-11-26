@@ -12,7 +12,7 @@ export async function load({}) {
         let { data, content } = matter(doc);
 
         if (!data.tags) {
-            continue;
+            data.tags = [];
         }
 
         data.tags = data.tags.map((t: string) => t.toLowerCase());

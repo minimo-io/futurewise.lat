@@ -11,8 +11,10 @@
         Button,
     } from "flowbite-svelte";
     import {
-        ChevronDownOutline,
-        ArrowRightOutline,
+        AnnotationOutline,
+        ToolsOutline,
+        NewspaperOutline,
+        PenOutline,
     } from "flowbite-svelte-icons";
     import { page } from "$app/stores";
 
@@ -23,7 +25,7 @@
 </script>
 
 <header class="relative border-b border-b-black w-full z-10">
-    <Navbar class="mx-auto sm:px-0 px-5 max-w-screen-lg z-20">
+    <Navbar class="mx-auto sm:px-0 px-5 max-w-[1200px] z-20">
         <NavBrand href="/">
             <img
                 src={logo}
@@ -33,25 +35,63 @@
             />
         </NavBrand>
         <div class="flex md:order-2">
+            <!-- <Button
+                href="/"
+                size="sm"
+                pill
+                class="ml-2 px-3 md:px-4 h-[30px] md:h-auto fw-btn-hover border-0 hidden md:inline"
+                color="light">Preços</Button
+            > -->
             <Button
                 href="/"
                 size="sm"
-                class="px-3 md:px-4 h-[30px] md:h-auto self-center bg-primary-900 hover:outline hover:outline-primary-300"
+                pill
+                color="light"
+                class="fw-btn-hover ml-2 px-3 md:px-4 h-[30px] md:h-auto self-center"
             >
-                Acesse<ArrowRightOutline
-                    class="w-5 h-5 ms-1 hidden md:inline"
-                />
+                Acesso
             </Button>
+            <Button
+                href="/"
+                size="sm"
+                pill
+                class="fw-btn-hover px-3 md:px-4 h-[30px] md:h-auto self-center bg-primary-900 ml-2"
+                >Cadastro</Button
+            >
             <NavHamburger />
         </div>
         <!-- <NavHamburger /> -->
         <NavUl {activeUrl}>
             <!-- <NavLi href="/">Início</NavLi> -->
+            <NavLi href="/" class="font-normal">
+                <ToolsOutline
+                    class="ms-2 text-primary dark:text-white inline"
+                />
+                Ferramentas
+            </NavLi>
+            <NavLi href="/" class="font-normal">
+                <PenOutline class="ms-2 text-primary dark:text-white inline" />
+                Treinamentos
+            </NavLi>
+            <NavLi href="/" class="font-normal">
+                <NewspaperOutline
+                    class="ms-2 text-primary dark:text-white inline"
+                />
+                Notícias
+            </NavLi>
+            <NavLi href="/" class="font-normal">
+                <AnnotationOutline
+                    class="ms-2 text-primary dark:text-white inline"
+                />
+                Comunidade
+            </NavLi>
+            <!--
             <NavLi class="cursor-pointer font-normal">
                 Ferramentas<ChevronDownOutline
                     class="w-6 h-6 ms-2 text-primary-600 dark:text-white inline"
                 />
             </NavLi>
+
             <Dropdown class="w-44 z-30">
                 <DropdownItem class="z-30 font-normal" href="#"
                     ><strong>✨ Gratuitas</strong></DropdownItem
@@ -72,20 +112,20 @@
                 <DropdownItem class="z-30 font-normal" href="#"
                     >Design</DropdownItem
                 >
-                <!--
+                -->
+            <!--
                 <DropdownItem href="#">Marketing</DropdownItem>
                 <DropdownItem href="#">Gerenciamento de projetos</DropdownItem>
                 <DropdownItem href="#">Carreira</DropdownItem>
                 <DropdownItem href="#">Edição de vídeo</DropdownItem>
                 -->
+            <!--
                 <DropdownDivider />
-                <DropdownItem class="z-30 font-normal" href="#"
+                <DropdownItem class="z-100 font-normal" href="/ferramentas"
                     >Ver todas</DropdownItem
                 >
             </Dropdown>
-            <NavLi href="#" class="font-normal">Treinamentos</NavLi>
-            <NavLi href="/#noticias" class="font-normal">Notícias</NavLi>
-            <NavLi href="#" class="font-normal">Top LLMs</NavLi>
+             -->
         </NavUl>
     </Navbar>
 </header>

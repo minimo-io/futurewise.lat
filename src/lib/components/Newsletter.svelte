@@ -28,7 +28,7 @@
                 sua produtividade. Fique por dentro das ferramentas, notícias e
                 treinamentos,
                 <br />
-                <strong>toda terça-feira no se Inbox</strong>.
+                <strong>toda sexta-feira no se Inbox</strong>.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <Input

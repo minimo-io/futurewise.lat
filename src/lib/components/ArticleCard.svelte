@@ -8,14 +8,18 @@
     export let editorial;
 </script>
 
-<Card href={url} img={image} class="my-4 hover:opacity-80 relative bg-white">
+<Card
+    href={url}
+    img={image}
+    class="my-4 hover:opacity-80 relative shadow-none bg-gray-50"
+>
     <h5
         class="mb-2 text-base font-light tracking-tight text-gray-900 dark:text-red-800"
     >
         {title}
     </h5>
     <p class="text-sm text-black mb-3">{date}</p>
-    <p class="font-normal text-gray-700 dark:text-gray-700 leading-tight">
+    <p class="text-lg font-semibold text-gray-800 font-sans">
         {description}
     </p>
     {#if editorial}
