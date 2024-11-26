@@ -1,5 +1,6 @@
 # Futurewise
 
+- Sometimes lists break: https://www.futurewise.lat/noticias/open-ai-lanca-modo-de-voz-avancado-no-navegador
 - Created by.
 - Re-design article grid
 - Define structure for emails/posts (AI NEWS; ART; TOOLS, etc)

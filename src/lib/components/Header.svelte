@@ -15,6 +15,7 @@
         ToolsOutline,
         NewspaperOutline,
         PenOutline,
+        ArrowRightAltOutline,
     } from "flowbite-svelte-icons";
     import { page } from "$app/stores";
 
@@ -47,7 +48,7 @@
                 size="sm"
                 pill
                 color="light"
-                class="fw-btn-hover ml-2 px-3 md:px-4 h-[30px] md:h-auto self-center"
+                class="fw-btn-hover md:inline-flex hidden ml-2 px-3 md:px-4 h-[30px] md:h-auto self-center"
             >
                 Acesso
             </Button>
@@ -55,8 +56,15 @@
                 href="/"
                 size="sm"
                 pill
-                class="fw-btn-hover px-3 md:px-4 h-[30px] md:h-auto self-center bg-primary-900 ml-2"
-                >Cadastro</Button
+                class="fw-btn-hover md:inline-flex hidden px-3 md:px-4 h-[30px] md:h-auto self-center bg-primary-900 ml-2"
+                ><ArrowRightAltOutline class="h-5 w-5 pr-1" />Cadastro</Button
+            >
+            <Button
+                href="/"
+                size="sm"
+                pill
+                class="fw-btn-hover inline-flex md:hidden px-3 md:px-4 h-[30px] md:h-auto self-center bg-primary-900 ml-2"
+                ><ArrowRightAltOutline class="h-5 w-5 pr-1" />Entrar</Button
             >
             <NavHamburger />
         </div>
