@@ -14,23 +14,21 @@
 {/if}
 
 <section class="">
-    <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto text-center">
+    <div class="container max-w-[1200px] mx-auto px-4 md:px-0">
+        <div class="max-w-3xl Xmx-auto text-center md:text-left">
             <h2 class="text-3xl md:text-5xl mb-4 font-sans">
                 Impulsione a sua vida com <br class="hidden md:inline" />
                 o
-                <span class="partial-border text-black font-bold"
-                    >poder da IA</span
-                >
+                <span class="partial-border text-black font-bold">poder da IA</span>
             </h2>
             <p class="text-gray-700 my-8 text-sm md:text-base">
-                Aprenda cómo aproveitar a inteligência artificial para aumentar
-                sua produtividade. Fique por dentro das ferramentas, notícias e
-                treinamentos,
+                Aprenda cómo aproveitar a inteligência artificial para aumentar sua produtividade. Fique por dentro das
+                ferramentas, notícias e treinamentos,
                 <br />
-                <strong>toda sexta-feira no se Inbox</strong>.
+                <strong>toda sexta-feira no se Inbox</strong>
+                .
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <div class="flex flex-col sm:flex-row gap-4 Xjustify-center">
                 <Input
                     type="email"
                     placeholder="Digite seu email"
@@ -44,13 +42,14 @@
                         // isVisible = false;
                         // await tick();
                         // isVisible = true;
-                        document.location =
-                            "https://futurewise.beehiiv.com/subscribe";
+                        document.location = "https://futurewise.beehiiv.com/subscribe";
                     }}
                     size="lg"
                     color="primary"
-                    class="z-20 bg-primary-900">Inscreva-se grátis</Button
+                    class="z-20 bg-primary-900"
                 >
+                    Inscreva-se grátis
+                </Button>
             </div>
         </div>
     </div>

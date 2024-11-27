@@ -1,12 +1,14 @@
 # Futurewise
 
-- Sometimes lists break: https://www.futurewise.lat/noticias/open-ai-lanca-modo-de-voz-avancado-no-navegador
-- Created by.
-- Re-design article grid
-- Define structure for emails/posts (AI NEWS; ART; TOOLS, etc)
-- Pagination
-- Time ago, for articles
-- Login y pricing de PRO (suscripcion anual R$29, una live de Networking e intercambio sobre AI cada semana + Ferramentas e contenido exclusivas)
+-   Sometimes lists break: https://www.futurewise.lat/noticias/open-ai-lanca-modo-de-voz-avancado-no-navegador
+-   Created by.
+-   Re-design article grid
+-   Define structure for emails/posts (AI NEWS; ART; TOOLS, etc)
+-   Pagination
+-   Time ago, for articles
+-   Login y pricing de PRO (suscripcion anual R$29, una live de Networking e intercambio sobre AI cada semana + Ferramentas e contenido exclusivas)
+-   In TopBoxes.svelte, get the latest art from the latest issue (now it's hardcoded).
+-   Home image and article image, add a pill with extra info or caption.
 
 ## sv
 

@@ -74,8 +74,6 @@
         @apply my-5 rounded-2xl shadow-none;
     }
 
-    .fw-content p {
-    }
     .fw-content ul,
     .fw-content ol {
         @apply list-inside marker:font-bold;
@@ -103,8 +101,7 @@
         right: 0;
         width: 0%; /* Initial width */
         height: var(--partial-border-height);
-        border-bottom: var(--partial-border-height) solid
-            var(--partial-border-color);
+        border-bottom: var(--partial-border-height) solid var(--partial-border-color);
         animation: border-grow 0.5s ease-in-out forwards; /* Animation on page load */
     }
 
