@@ -1,5 +1,7 @@
 {
     "functions": {
-        "includeFiles": ["src/posts/**"]
+        "api/**/*": {
+            "includeFiles": ["src/lib/posts/**"]
+        }
     }
 }
