@@ -36,7 +36,7 @@ export const actions = {
             );
 
             if (!response.ok) {
-                console.log(json(response));
+                // console.log(json(response));
                 // console.log(response.headers);
                 return fail(500, {
                     description: data.get("description"),
@@ -57,11 +57,14 @@ export const actions = {
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load({}) {
-    const fileNames = await fs.promises.readdir("src/posts/");
+    const fileNames = await fs.promises.readdir("src/lib/posts/");
     let posts: any[] = [];
 
     for (let fileName of fileNames) {
-        const doc = await fs.promises.readFile(`src/posts/${fileName}`, "utf8");
+        const doc = await fs.promises.readFile(
+            `src/lib/posts/${fileName}`,
+            "utf8",
+        );
         let { data, content } = matter(doc);
 
         if (!data.tags) {
