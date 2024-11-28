@@ -4,13 +4,11 @@
     import ArticlesList from "$components/ArticlesList.svelte";
     import TopBoxes from "$components/TopBoxes.svelte";
     import type { PageData } from "./$types";
-    import bgImage from "$lib/images/futurewise-yellow.png";
     import LatestArt from "$components/LatestArt.svelte";
 
     let isVisible = $state(false);
 
-    let { data }: { data: PageData } = $props();
-    // export let data;
+    let { data, form } = $props();
     let posts = data.posts;
 
     onMount(() => {
@@ -27,12 +25,17 @@
 
 <svelte:head>
     <title>Futurewise</title>
-    <meta name="description" content="Vamos impulsionar sua vida e seu negócio com o poder da IA!" />
+    <meta
+        name="description"
+        content="Aprenda cómo aproveitar a inteligência artificial para aumentar sua produtividade. Fique por dentro das ferramentas, notícias e treinamentos."
+    />
 </svelte:head>
 
 <section class="relative py-10 md:py-20 px-[32px] md:px-5 md:px-auto">
     <div class="flex flex-col md:flex-row max-w-[1200px] mx-auto">
-        <div><Newsletter /></div>
+        <div>
+            <Newsletter {form} />
+        </div>
         <div class="relative flex-1">
             <LatestArt
                 {metadata}

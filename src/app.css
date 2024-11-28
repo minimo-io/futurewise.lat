@@ -84,6 +84,9 @@
     .fw-content ol {
         @apply list-decimal;
     }
+    .fw-content iframe {
+        @apply rounded-2xl;
+    }
     /* END OF CONTENT BASE FOR ARTICLES & PAGES */
 }
 
@@ -101,7 +104,8 @@
         right: 0;
         width: 0%; /* Initial width */
         height: var(--partial-border-height);
-        border-bottom: var(--partial-border-height) solid var(--partial-border-color);
+        border-bottom: var(--partial-border-height) solid
+            var(--partial-border-color);
         animation: border-grow 0.5s ease-in-out forwards; /* Animation on page load */
     }
 

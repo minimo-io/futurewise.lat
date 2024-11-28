@@ -1,6 +1,59 @@
 import fs from "fs";
 import matter from "gray-matter";
-// import { marked } from "marked";
+import { fail, json } from "@sveltejs/kit";
+import { BEEHIIV_API_KEY, BEEHIIV_PUBLICATION_ID } from "$env/static/private";
+
+export const prerender = false;
+
+export const actions = {
+    subscribe: async ({ cookies, request }) => {
+        // await new Promise((fulfil) => setTimeout(fulfil, 1000));
+        const data = await request.formData();
+        let userEmail = data.get("email").trim();
+        if (userEmail == "") {
+            return fail(422, {
+                description: data.get("description"),
+                error: "O e-mail não pode estar vazio.",
+            });
+        }
+        console.log(
+            `https://api.beehiiv.com/v2/publications/${BEEHIIV_PUBLICATION_ID}/subscriptions`,
+        );
+        try {
+            const response = await fetch(
+                `https://api.beehiiv.com/v2/publications/${BEEHIIV_PUBLICATION_ID}/subscriptions`,
+                {
+                    method: "POST",
+                    headers: {
+                        Authorization: `Bearer ${BEEHIIV_API_KEY}`,
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        email: userEmail,
+                        send_welcome_email: true,
+                    }),
+                },
+            );
+
+            if (!response.ok) {
+                console.log(json(response));
+                // console.log(response.headers);
+                return fail(500, {
+                    description: data.get("description"),
+                    error: "Ocorreu algum erro ao tentar assinar",
+                });
+            }
+
+            // return json({ message: "Subscription successful!" });
+            console.log(`Hey ${userEmail}!, you are now subscribed!`);
+        } catch (error: any) {
+            return fail(500, {
+                description: data.get("description"),
+                error: error.message,
+            });
+        }
+    },
+};
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load({}) {

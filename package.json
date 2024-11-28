@@ -1,6 +1,6 @@
 {
     "name": "futurewise.lat",
-    "description": "Seja um ninja das redes neuronais",
+    "description": "Aprenda cómo aproveitar a inteligência artificial para aumentar sua produtividade. Fique por dentro das ferramentas, notícias e treinamentos.",
     "version": "0.0.2",
     "type": "module",
     "scripts": {
@@ -11,13 +11,14 @@
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
     },
     "engines": {
-      "node": "18 || 20"
+        "node": "18 || 20"
     },
     "devDependencies": {
         "@neoconfetti/svelte": "^2.2.1",
-        "@sveltejs/adapter-auto": "^3.3.1",
+        "@sveltejs/adapter-vercel": "^5.4.8",
         "@sveltejs/kit": "^2.8.1",
         "@sveltejs/vite-plugin-svelte": "^4.0.0",
+        "@types/node": "^22.10.1",
         "autoprefixer": "^10.4.20",
         "flowbite": "^2.5.2",
         "flowbite-svelte": "^0.47.3",
