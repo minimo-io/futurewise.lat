@@ -1,0 +1,7 @@
+{
+    "functions": {
+        "src/**/*": {
+            "includeFiles": ["src/posts/**/*"]
+        }
+    }
+}
