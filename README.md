@@ -9,6 +9,7 @@
 -   Login y pricing de PRO (suscripcion anual R$29, una live de Networking e intercambio sobre AI cada semana + Ferramentas e contenido exclusivas)
 -   In TopBoxes.svelte, get the latest art from the latest issue (now it's hardcoded).
 -   Home image and article image, add a pill with extra info or caption.
+-   Dark mode
 
 ## sv
 
