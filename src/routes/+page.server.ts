@@ -56,37 +56,37 @@ export const actions = {
     },
 };
 
-/** @type {import('./$types').PageServerLoad} */
-export async function load({}) {
-    const postsDirectory = path.resolve("static/posts/");
+// /** @type {import('./$types').PageServerLoad} */
+// export async function load({}) {
+//     const postsDirectory = path.resolve("static/posts/");
 
-    const fileNames = await fs.promises.readdir(postsDirectory);
-    let posts: any[] = [];
+//     const fileNames = await fs.promises.readdir(postsDirectory);
+//     let posts: any[] = [];
 
-    for (let fileName of fileNames) {
-        const doc = await fs.promises.readFile(
-            `${postsDirectory}/${fileName}`,
-            "utf8",
-        );
-        let { data, content } = matter(doc);
+//     for (let fileName of fileNames) {
+//         const doc = await fs.promises.readFile(
+//             `${postsDirectory}/${fileName}`,
+//             "utf8",
+//         );
+//         let { data, content } = matter(doc);
 
-        if (!data.tags) {
-            data.tags = [];
-        }
+//         if (!data.tags) {
+//             data.tags = [];
+//         }
 
-        data.tags = data.tags.map((t: string) => t.toLowerCase());
+//         data.tags = data.tags.map((t: string) => t.toLowerCase());
 
-        posts.push({
-            url: "/noticias/" + fileName.replace(/.md/gi, ""),
-            ...data,
-        });
-    }
-    // posts = posts.reverse();
-    posts.sort((a: any, b: any) => {
-        let dateA = new Date(a.created).getTime();
-        let dateB = new Date(b.created).getTime();
+//         posts.push({
+//             url: "/noticias/" + fileName.replace(/.md/gi, ""),
+//             ...data,
+//         });
+//     }
+//     // posts = posts.reverse();
+//     posts.sort((a: any, b: any) => {
+//         let dateA = new Date(a.created).getTime();
+//         let dateB = new Date(b.created).getTime();
 
-        return dateB - dateA;
-    });
-    return { posts };
-}
+//         return dateB - dateA;
+//     });
+//     return { posts };
+// }
