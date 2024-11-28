@@ -6,7 +6,7 @@ import { marked } from "marked";
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ params }) {
     const { slug } = params;
-    const postsDirectory = path.resolve("src/posts/");
+    const postsDirectory = path.resolve("static/posts/");
     const doc = await fs.promises.readFile(
         `${postsDirectory}/${slug}.md`,
         "utf8",

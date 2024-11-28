@@ -58,7 +58,7 @@ export const actions = {
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load({}) {
-    const postsDirectory = path.resolve("src/posts/");
+    const postsDirectory = path.resolve("static/posts/");
 
     const fileNames = await fs.promises.readdir(postsDirectory);
     let posts: any[] = [];
