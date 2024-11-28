@@ -1,4 +1,5 @@
 import fs from "fs";
+import path from "path";
 import matter from "gray-matter";
 import { fail, json } from "@sveltejs/kit";
 import { BEEHIIV_API_KEY, BEEHIIV_PUBLICATION_ID } from "$env/static/private";
@@ -57,12 +58,14 @@ export const actions = {
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load({}) {
-    const fileNames = await fs.promises.readdir("src/lib/posts/");
+    const postsDirectory = path.resolve("src/posts/");
+
+    const fileNames = await fs.promises.readdir(postsDirectory);
     let posts: any[] = [];
 
     for (let fileName of fileNames) {
         const doc = await fs.promises.readFile(
-            `src/lib/posts/${fileName}`,
+            `${postsDirectory}/${fileName}`,
             "utf8",
         );
         let { data, content } = matter(doc);
