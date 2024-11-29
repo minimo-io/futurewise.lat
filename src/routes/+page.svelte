@@ -34,7 +34,7 @@
 
 <section class="relative py-10 md:py-20 px-[32px] md:px-5 md:px-auto">
     <div
-        class="fw-home-bg pointer-events-none absolute left-0 top-0 bg-cover bg-[0px_-380px] md:bg-[-2px_-390px] -z-10 opacity-100"
+        class="fw-home-bg pointer-events-none absolute left-0 top-0 bg-cover bg-[0px_-380px] md:bg-[0_-222px] -z-10 opacity-100"
         style="height:100%;width:100%;background-image:image-set(url(/post-images/bg-2.png) 1x, url(/post-images/bg-2.png) 2x);"
     ></div>
     <div class="flex flex-col md:flex-row max-w-[1200px] mx-auto">
