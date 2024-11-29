@@ -18,15 +18,15 @@
 
 <section>
     <div class="container max-w-[1200px] mx-auto px-4 md:px-0">
-        <div class="max-w-3xl Xmx-auto text-center md:text-left">
-            <h2 class="text-3xl md:text-5xl mb-4 font-sans">
+        <div class="max-w-3xl text-center md:text-left">
+            <h2 class="text-3xl md:text-5xl mb-4 font-sans text-white">
                 Impulsione a sua vida com <br class="hidden md:inline" />
                 o
-                <span class="partial-border text-black font-bold"
+                <span class="partial-border text-white font-bold"
                     >poder da IA</span
                 >
             </h2>
-            <p class="text-gray-700 my-8 text-sm md:text-base">
+            <p class="text-gray-300 my-8 text-sm md:text-base">
                 Aprenda cómo aproveitar a inteligência artificial para aumentar
                 sua produtividade. Fique por dentro das ferramentas, notícias e
                 treinamentos,
@@ -74,7 +74,7 @@
                         type="submit"
                         size="lg"
                         color="primary"
-                        class="bg-primary-900"
+                        class="bg-primary-950"
                         disabled={subscribing}
                     >
                         {#if subscribing}

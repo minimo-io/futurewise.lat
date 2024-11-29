@@ -28,7 +28,12 @@
 <header class="relative border-b border-b-black w-full z-10 bg-white">
     <Navbar class="mx-auto sm:px-0 px-5 max-w-[1200px] z-20">
         <NavBrand href="/">
-            <img src={logo} class="me-3 h-6 sm:h-7" alt="Futurewise" title="Futurewise" />
+            <img
+                src={logo}
+                class="me-3 h-6 sm:h-7"
+                alt="Futurewise"
+                title="Futurewise"
+            />
         </NavBrand>
         <div class="flex md:order-2">
             <Button
@@ -44,7 +49,7 @@
                 href="/"
                 size="sm"
                 pill
-                class="fw-btn-hover md:inline-flex hidden px-3 md:px-4 h-[30px] md:h-auto self-center bg-primary-900 ml-2"
+                class="fw-btn-hover md:inline-flex hidden px-3 md:px-4 h-[30px] md:h-auto self-center bg-primary-950 ml-2"
             >
                 <ArrowRightAltOutline class="h-5 w-5 pr-1" />Cadastro
             </Button>
@@ -52,7 +57,7 @@
                 href="/"
                 size="sm"
                 pill
-                class="fw-btn-hover inline-flex md:hidden px-3 md:px-4 h-[30px] md:h-auto self-center bg-primary-900 ml-2"
+                class="fw-btn-hover inline-flex md:hidden px-3 md:px-4 h-[30px] md:h-auto self-center bg-primary-950 ml-2"
             >
                 <ArrowRightAltOutline class="h-5 w-5 pr-1" />Entrar
             </Button>
@@ -62,7 +67,9 @@
         <NavUl {activeUrl}>
             <!-- <NavLi href="/">Início</NavLi> -->
             <NavLi href="/ferramentas" class="font-normal">
-                <ToolsOutline class="ms-2 text-primary dark:text-white inline" />
+                <ToolsOutline
+                    class="ms-2 text-primary dark:text-white inline"
+                />
                 Ferramentas
             </NavLi>
             <NavLi href="/" class="font-normal">
@@ -70,11 +77,15 @@
                 Treinamentos
             </NavLi>
             <NavLi href="/" class="font-normal">
-                <NewspaperOutline class="ms-2 text-primary dark:text-white inline" />
+                <NewspaperOutline
+                    class="ms-2 text-primary dark:text-white inline"
+                />
                 Notícias
             </NavLi>
             <NavLi href="/" class="font-normal">
-                <AnnotationOutline class="ms-2 text-primary dark:text-white inline" />
+                <AnnotationOutline
+                    class="ms-2 text-primary dark:text-white inline"
+                />
                 Comunidade
             </NavLi>
             <!--

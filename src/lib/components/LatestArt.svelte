@@ -29,8 +29,9 @@
                 class="flex relative {codeTop} !p-5 !py-3 {darkComment
                     ? '!bg-black !text-white'
                     : '!bg-gray-50'} !rounded-none md:!rounded-xl">
-<code
-                    class="text-xs self-center">A horse made from total transparent glass, on a plain background light reflection of Brazil flag --ar 2:3 --style raw --v 6.1 --stylize 800</code>
+<code class="text-xs self-center"
+                    >A horse made from total transparent glass, on a plain background light reflection of Brazil flag --ar 2:3 --style raw --v 6.1 --stylize 800</code
+                >
     </pre>
         {/if}
     </div>

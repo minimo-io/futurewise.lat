@@ -14,32 +14,39 @@
     <meta name="description" content={metadata.summary} />
 </svelte:head>
 
-<section
-    class="max-w-[1200px] px-[32px] md:px-2 mx-auto my-10 md:pr-72 relative -top-[10px] md:top-0"
->
-    <span class="partial-border partial-border-sm mb-4 font-bold"
-        >Futurewise edição #1</span
+<div class="relative py-10">
+    <section
+        class="max-w-[1200px] px-[32px] md:px-2 mx-auto md:pr-72 relative -top-[10px] md:top-0"
     >
-    <Heading
-        tag="h1"
-        class="mb-4"
-        customSize="text-2xl font-bold font-sans md:text-4xl md:text-left md:px-0 leading-[110%] md:leading-[110%]"
-    >
-        {metadata.title}
-    </Heading>
-    <Heading
-        tag="h2"
-        class="mb-4"
-        customSize="text-base md:text-lg leading-[110%] md:leading-[110%] font-light text-white md:text-lg md:max-w-[75%]"
-    >
-        {metadata.summary}
-    </Heading>
-    <p class="md:text-left text-gray-400 text-xs md:text-base">
-        <time>{new Date(metadata.created).toLocaleDateString()}</time>
-        -
-        <time>Tempo de leitura: menos de 4 minutos</time>
-    </p>
-</section>
+        <span
+            class="partial-border partial-border-sm mb-4 font-normal text-white"
+            >Futurewise edição #1</span
+        >
+        <Heading
+            tag="h1"
+            class="mb-4 text-white"
+            customSize="text-2xl font-bold font-sans md:text-4xl md:text-left md:px-0 leading-[110%] md:leading-[110%]"
+        >
+            {metadata.title}
+        </Heading>
+        <Heading
+            tag="h2"
+            class="mb-4 text-gray-300"
+            customSize="text-base md:text-lg leading-[110%] md:leading-[110%] font-light text-white md:text-lg md:max-w-[75%]"
+        >
+            {metadata.summary}
+        </Heading>
+        <p class="md:text-left text-gray-400 text-xs md:text-base">
+            <time>{new Date(metadata.created).toLocaleDateString()}</time>
+            -
+            <time>Tempo de leitura: menos de 4 minutos</time>
+        </p>
+    </section>
+    <div
+        class="pointer-events-none absolute left-0 top-0 md:bg-cover bg-[center_100%] md:bg-[center_bottom] -z-10 opacity-100"
+        style="height:100%;width:100%;background-image:image-set(url(/post-images/bg-2.png) 1x, url(/post-images/bg-2.png) 2x);"
+    ></div>
+</div>
 
 <div class="border-t border-t-gray-900 relative">
     <section

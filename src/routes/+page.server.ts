@@ -58,7 +58,7 @@ export const actions = {
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load({}) {
-    const postsDirectory = "static/posts/";
+    // const postsDirectory = "static/posts/";
     const fileNames: string[] = [
         "OpenAI-considera-desafiar-o-Google-com-um-navegador.md",
         "issue-1.md",

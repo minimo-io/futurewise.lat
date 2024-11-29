@@ -2,10 +2,11 @@
 
 - Redirect to a thank you page after subscription, asking to check the email.
 - Configure welcome email: https://www.beehiiv.com/support/article/12314772394519-how-to-set-up-your-welcome-email
+- Define structure for emails/posts (AI NEWS; ART; TOOLS, etc)
 - Sometimes lists break: https://www.futurewise.lat/noticias/open-ai-lanca-modo-de-voz-avancado-no-navegador
 - Created by like aiweekly.
 - Re-design article grid
-- Define structure for emails/posts (AI NEWS; ART; TOOLS, etc)
+- Keep working on pre-rendering articles, instead of fetching.
 - Pagination
 - Time ago, for articles
 - Login y pricing de PRO (suscripcion anual R$29, una live de Networking e intercambio sobre AI cada semana + Ferramentas e contenido exclusivas)
