@@ -14,8 +14,12 @@
     <meta name="description" content={metadata.summary} />
 </svelte:head>
 
-<section class="max-w-[1200px] px-[32px] md:px-2 mx-auto my-10 md:pr-72 relative -top-[10px] md:top-0">
-    <span class="partial-border partial-border-sm mb-4 font-bold">Futurewise edição #1</span>
+<section
+    class="max-w-[1200px] px-[32px] md:px-2 mx-auto my-10 md:pr-72 relative -top-[10px] md:top-0"
+>
+    <span class="partial-border partial-border-sm mb-4 font-bold"
+        >Futurewise edição #1</span
+    >
     <Heading
         tag="h1"
         class="mb-4"
@@ -38,19 +42,27 @@
 </section>
 
 <div class="border-t border-t-gray-900 relative">
-    <section class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-0 md:gap-20 relative">
-        <article class="flex-1 mt-5 order-1 md:order-0 -top-32 md:top-0 relative px-[32px] md:px-0">
+    <section
+        class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-0 md:gap-20 relative"
+    >
+        <article
+            class="flex-1 mt-5 order-1 md:order-0 -top-32 md:top-0 relative px-[32px] md:px-0"
+        >
             <div class="fw-content mb-7 mt-0 px-[32] md:px-4 max-w">
                 {@html html}
             </div>
-            <ol class="px-4 md:px-4">
-                {#each metadata.tags as tag}
-                    <li>#{tag}</li>
-                {/each}
-            </ol>
+            {#if metadata.tags}
+                <ol class="px-4 md:px-4">
+                    {#each metadata.tags as tag}
+                        <li>#{tag}</li>
+                    {/each}
+                </ol>
+            {/if}
         </article>
 
-        <aside class="w-full md:w-4/12 mt-10 md:mt-10 relative block -top-16 md:-top-28 order-0 md:order-1">
+        <aside
+            class="w-full md:w-4/12 mt-10 md:mt-10 relative block -top-16 md:-top-28 order-0 md:order-1"
+        >
             <LatestArt {metadata} {sticky} showSubscribe />
         </aside>
     </section>

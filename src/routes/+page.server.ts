@@ -1,5 +1,5 @@
 import fs from "fs";
-import path from "path";
+import { dev } from "$app/environment";
 import matter from "gray-matter";
 import { fail, json } from "@sveltejs/kit";
 import { BEEHIIV_API_KEY, BEEHIIV_PUBLICATION_ID } from "$env/static/private";
@@ -68,11 +68,24 @@ export async function load({}) {
     ];
     let posts: any[] = [];
 
+    let projectPath = "https://www.futurewise.lat";
+    if (dev) {
+        projectPath = "http://localhost:3001";
+    }
+
     for (let fileName of fileNames) {
-        const doc = await fs.promises.readFile(
-            `${postsDirectory}/${fileName}`,
-            "utf8",
-        );
+        // const doc = await fs.promises.readFile(
+        //     `${postsDirectory}/${fileName}`,
+        //     "utf8",
+        // );
+
+        const response = await fetch(`${projectPath}/posts/${fileName}`);
+        if (!response.ok) {
+            throw new Error(
+                `Failed to fetch post ${fileName}.md: ${response.statusText}`,
+            );
+        }
+        const doc = await response.text();
         let { data, content } = matter(doc);
 
         if (!data.tags) {
