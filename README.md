@@ -4,6 +4,7 @@
 - Configure welcome email: https://www.beehiiv.com/support/article/12314772394519-how-to-set-up-your-welcome-email
 - Define structure for emails/posts (AI NEWS; ART; TOOLS, etc)
 - Sometimes lists break: https://www.futurewise.lat/noticias/open-ai-lanca-modo-de-voz-avancado-no-navegador
+- HARD: Articles background should be dynamic, based on the images color palette.
 - Created by like aiweekly.
 - Re-design article grid
 - Keep working on pre-rendering articles, instead of fetching.

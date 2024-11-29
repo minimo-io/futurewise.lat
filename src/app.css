@@ -46,7 +46,37 @@
         background-size: cover;
         background-position: 50% 50%;
     }
+    .fw-home-bg {
+        /* @apply pointer-events-none absolute left-0 top-0 bg-cover bg-[-120px_-370px] md:bg-[-2px_-390px] -z-10 opacity-100;
+        background-image: image-set(
+            url(/post-images/bg-2.png) 1x,
+            url(/post-images/bg-2.png) 2x
+        );
+        */
+        -moz-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+        filter: FlipV;
+        -ms-filter: "FlipV";
+    }
     /* CONTENT BASE FOR ARTICLES & PAGES */
+    .fw-content-bg {
+        @apply pointer-events-none absolute left-0 top-0 md:bg-cover bg-[center_100%] md:bg-[center_bottom] -z-10 opacity-100 bg-black;
+        height: 100%;
+        width: 100%;
+
+        background-image: image-set(
+            url(/post-images/bg-2.png) 1x,
+            url(/post-images/bg-2.png) 2x
+        );
+        -moz-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+        filter: FlipV;
+        -ms-filter: "FlipV";
+    }
     .fw-content strong {
         @apply font-medium;
     }

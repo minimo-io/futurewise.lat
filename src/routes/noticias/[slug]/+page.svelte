@@ -42,10 +42,7 @@
             <time>Tempo de leitura: menos de 4 minutos</time>
         </p>
     </section>
-    <div
-        class="pointer-events-none absolute left-0 top-0 md:bg-cover bg-[center_100%] md:bg-[center_bottom] -z-10 opacity-100"
-        style="height:100%;width:100%;background-image:image-set(url(/post-images/bg-2.png) 1x, url(/post-images/bg-2.png) 2x);"
-    ></div>
+    <div class="fw-content-bg"></div>
 </div>
 
 <div class="border-t border-t-gray-900 relative">
