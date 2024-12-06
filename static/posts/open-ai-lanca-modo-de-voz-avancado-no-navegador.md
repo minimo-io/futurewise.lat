@@ -1,6 +1,7 @@
 ---
 title: "ChatGPT Lança Modo de Voz Avançado no Navegador"
-image: "/post-images/chatgpt-no-navegador.webp"
+image:
+    src: "/post-images/chatgpt-no-navegador.webp"
 created: "2024-11-21 23:57:00"
 summary: "OpenAI lançou o Modo de Voz Avançado no ChatGPT web, com vozes naturais e melhorias; disponível para assinantes e em breve para usuários gratuitos."
 tags:
@@ -12,13 +13,13 @@ A OpenAI anunciou a chegada do Modo de Voz Avançado (AVM) ao ChatGPT para naveg
 
 ## Principais Novidades do Modo de Voz Avançado
 
--   **Cinco Novas Vozes Naturais**: O recurso agora conta com vozes chamadas Arbor, Maple, Sol, Spruce e Vale, projetadas para tornar as interações mais orgânicas. Juntas, elas somam nove opções disponíveis, todas inspiradas em elementos da natureza, o que reflete o foco em uma experiência mais natural e envolvente.
+- **Cinco Novas Vozes Naturais**: O recurso agora conta com vozes chamadas Arbor, Maple, Sol, Spruce e Vale, projetadas para tornar as interações mais orgânicas. Juntas, elas somam nove opções disponíveis, todas inspiradas em elementos da natureza, o que reflete o foco em uma experiência mais natural e envolvente.
 
--   **Design Renovado**: Uma esfera azul animada substituiu os pontos pretos anteriormente usados para indicar atividades de áudio, proporcionando uma interface mais moderna e atraente.
+- **Design Renovado**: Uma esfera azul animada substituiu os pontos pretos anteriormente usados para indicar atividades de áudio, proporcionando uma interface mais moderna e atraente.
 
--   **Aprimoramento de Sotaques e Velocidade**: A funcionalidade foi otimizada para entender uma ampla variedade de sotaques e para responder com maior fluidez e rapidez.
+- **Aprimoramento de Sotaques e Velocidade**: A funcionalidade foi otimizada para entender uma ampla variedade de sotaques e para responder com maior fluidez e rapidez.
 
--   **Expansão de Personalização**: Instruções personalizadas e a funcionalidade de memória, que permite ao ChatGPT lembrar-se de preferências e conversas passadas, foram integradas ao AVM, melhorando a experiência do usuário.
+- **Expansão de Personalização**: Instruções personalizadas e a funcionalidade de memória, que permite ao ChatGPT lembrar-se de preferências e conversas passadas, foram integradas ao AVM, melhorando a experiência do usuário.
 
 ## Desafios e Disponibilidade Regional
 

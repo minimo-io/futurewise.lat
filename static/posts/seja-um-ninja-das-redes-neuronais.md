@@ -1,6 +1,7 @@
 ---
 title: "Seja um ninja das redes neuronais"
-image: "/post-images/neural-ninja-3.png"
+image:
+    src: "/post-images/neural-ninja-3.png"
 created: "2024-11-15"
 summary: "asdadas!"
 editorial: true

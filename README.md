@@ -1,5 +1,6 @@
 # Futurewise
 
+- We need config json file or utility class or shared global data (like eleventy) for example to determine page base url (dev | build).
 - Redirect to a thank you page after subscription, asking to check the email.
 - Configure welcome email: https://www.beehiiv.com/support/article/12314772394519-how-to-set-up-your-welcome-email
 - Define structure for emails/posts (AI NEWS; ART; TOOLS, etc)

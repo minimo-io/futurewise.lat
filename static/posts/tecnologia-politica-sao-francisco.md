@@ -1,6 +1,7 @@
 ---
 title: "Tecnologia e Política: Uma Nova Era em São Francisco"
-image: "/post-images/san-francisco-tech-2.jpg"
+image:
+    src: "/post-images/san-francisco-tech-2.jpg"
 created: "2024-11-22 12:00:00"
 summary: "O prefeito eleito de São Francisco, Daniel Lurie, nomeou Sam Altman, CEO da OpenAI, como co-presidente de sua equipe de transição. Juntos, eles planejam inovar e reconstruir parcerias, com foco na comunidade tecnológica."
 tags:
@@ -17,9 +18,9 @@ Lurie, um novato na política, investiu US$ 9 milhões de seu próprio dinheiro 
 
 Pontos Chave a Considerar:
 
--   Inovação e Confiança: Lurie focará em inovação e na reconstrução da confiança entre a comunidade tecnológica e a liderança da cidade.
--   Segurança Pública: A segurança pública será uma prioridade enquanto Lurie trabalha para reter e atrair profissionais de tecnologia.
--   Equipe Diversificada: A equipe de transição inclui líderes de tecnologia, organizações sem fins lucrativos e serviço público.
+- Inovação e Confiança: Lurie focará em inovação e na reconstrução da confiança entre a comunidade tecnológica e a liderança da cidade.
+- Segurança Pública: A segurança pública será uma prioridade enquanto Lurie trabalha para reter e atrair profissionais de tecnologia.
+- Equipe Diversificada: A equipe de transição inclui líderes de tecnologia, organizações sem fins lucrativos e serviço público.
 
 ## Tech Bros Unidos!
 

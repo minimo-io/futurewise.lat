@@ -3,7 +3,6 @@
     import { onMount } from "svelte";
     import ArticlesList from "$components/ArticlesList.svelte";
     import TopBoxes from "$components/TopBoxes.svelte";
-    import type { PageData } from "./$types";
     import LatestArt from "$components/LatestArt.svelte";
 
     let isVisible = $state(false);
@@ -11,14 +10,15 @@
     let { data, form } = $props();
     let posts = data.posts;
     let showCaption =
-        "Imagem criada com Flux Pro @ <a href='https://mistral.ai/' class='underline hover:opacity-50'>Mistral</a>";
+        "Imagem criada com Flux Pro @ <a href='https://mistral.ai/' target='_blank' rel='noopener' class='underline hover:opacity-50'>Mistral</a>";
     onMount(() => {
         // @ts-ignore
         loadParticles();
     });
     let metadata = {
-        image: "/post-images/c6fde762-a667-49c6-81e4-b0bb88a99024.jpg",
-        text: "Hooooorrrrssssse",
+        image: {
+            src: "/post-images/c6fde762-a667-49c6-81e4-b0bb88a99024.jpg",
+        },
     };
     let showCode = false;
     let roundedImage = "bottom";

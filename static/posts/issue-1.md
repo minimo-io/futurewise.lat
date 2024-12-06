@@ -1,6 +1,8 @@
 ---
 title: "Revolucione sua estratégia no LinkedIn com a IA do Taplio e mais"
-image: "/post-images/issues/1-horse-brazil.png"
+image:
+    src: "/post-images/issues/1-horse-brazil.png"
+    prompt: "A horse made from total transparent glass, on a plain background light reflection of Brazil flag --ar 2:3 --style raw --v 6.1 --stylize 800"
 created: "2024-11-26 12:50:00"
 summary: "A Taplio IA facilita sua vida ao criar e gerenciar conteúdo de forma eficiente para LinkedIn"
 tags: [issue]

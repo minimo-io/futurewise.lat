@@ -10,14 +10,8 @@
 </script>
 
 <!-- {#if index != 0} -->
-<Card
-    href={url}
-    img={image}
-    class="my-4 hover:opacity-80 relative shadow-none bg-gray-50"
->
-    <h5
-        class="mb-2 text-base font-light tracking-tight text-gray-900 dark:text-red-800"
-    >
+<Card href={url} img={image.src} class="my-4 hover:opacity-80 relative shadow-none bg-gray-50">
+    <h5 class="mb-2 text-base font-light tracking-tight text-gray-900 dark:text-red-800">
         {title}
     </h5>
     <p class="text-sm text-black mb-3">{date}</p>

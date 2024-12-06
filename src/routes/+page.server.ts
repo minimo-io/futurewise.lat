@@ -3,6 +3,7 @@ import { dev } from "$app/environment";
 import matter from "gray-matter";
 import { fail, json } from "@sveltejs/kit";
 import { BEEHIIV_API_KEY, BEEHIIV_PUBLICATION_ID } from "$env/static/private";
+import config from "$lib/config";
 
 export const prerender = false;
 
@@ -17,9 +18,7 @@ export const actions = {
                 error: "O e-mail não pode estar vazio.",
             });
         }
-        console.log(
-            `https://api.beehiiv.com/v2/publications/${BEEHIIV_PUBLICATION_ID}/subscriptions`,
-        );
+        console.log(`https://api.beehiiv.com/v2/publications/${BEEHIIV_PUBLICATION_ID}/subscriptions`);
         try {
             const response = await fetch(
                 `https://api.beehiiv.com/v2/publications/${BEEHIIV_PUBLICATION_ID}/subscriptions`,
@@ -59,31 +58,18 @@ export const actions = {
 /** @type {import('./$types').PageServerLoad} */
 export async function load({}) {
     // const postsDirectory = "static/posts/";
-    const fileNames: string[] = [
-        "OpenAI-considera-desafiar-o-Google-com-um-navegador.md",
-        "issue-1.md",
-        "open-ai-lanca-modo-de-voz-avancado-no-navegador.md",
-        "seja-um-ninja-das-redes-neuronais.md",
-        "tecnologia-politica-sao-francisco.md",
-    ];
+
     let posts: any[] = [];
 
-    let projectPath = "https://www.futurewise.lat";
-    if (dev) {
-        projectPath = "http://localhost:3001";
-    }
-
-    for (let fileName of fileNames) {
+    for (let fileName of config.postNames) {
         // const doc = await fs.promises.readFile(
         //     `${postsDirectory}/${fileName}`,
         //     "utf8",
         // );
 
-        const response = await fetch(`${projectPath}/posts/${fileName}`);
+        const response = await fetch(`${config.baseUrl}/posts/${fileName}`);
         if (!response.ok) {
-            throw new Error(
-                `Failed to fetch post ${fileName}.md: ${response.statusText}`,
-            );
+            throw new Error(`Failed to fetch post ${fileName}.md: ${response.statusText}`);
         }
         const doc = await response.text();
         let { data, content } = matter(doc);
