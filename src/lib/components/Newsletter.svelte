@@ -22,17 +22,13 @@
             <h2 class="text-3xl md:text-5xl mb-4 font-sans text-white">
                 Impulsione a sua vida com <br class="hidden md:inline" />
                 o
-                <span class="partial-border text-white font-bold"
-                    >poder da IA</span
-                >
+                <span class="partial-border text-white font-bold">poder da IA</span>
             </h2>
             <p class="text-gray-300 my-8 text-sm md:text-base">
-                Aprenda cómo aproveitar a inteligência artificial para aumentar
-                sua produtividade. Fique por dentro das ferramentas, notícias e
-                treinamentos,
+                Aprenda cómo aproveitar a inteligência artificial para aumentar sua produtividade. Fique por dentro das
+                ferramentas, notícias e treinamentos,
                 <br />
-                <strong>toda sexta-feira no se Inbox</strong>
-                .
+                <strong>toda sexta-feira no se Inbox</strong>.
             </p>
             <div class="z-50 relative">
                 <form
@@ -42,14 +38,23 @@
                     use:enhance={() => {
                         subscribing = true;
 
-                        return async ({ update }) => {
+                        return async ({ update, result }) => {
                             await update();
+
                             isSubscribed = true;
+
+                            // Here we can have an error
+                            // in case of error show it to the user
+                            // else redirect to a thank you page!
+
                             subscribing = false;
 
                             setTimeout(() => {
                                 isSubscribed = false;
-                            }, 2500);
+                                if (result.data.success) {
+                                    document.location = "./obrigado";
+                                }
+                            }, 1000);
                         };
                     }}
                     class="flex flex-col sm:flex-row gap-4"
@@ -64,19 +69,11 @@
                         autofocus
                     />
                     {#if form?.error}
-                        <div
-                            class="block md:hidden text-red-600 text-base text-center md:text-left"
-                        >
+                        <div class="block md:hidden text-red-600 text-base text-center md:text-left">
                             {form.error}
                         </div>
                     {/if}
-                    <Button
-                        type="submit"
-                        size="lg"
-                        color="primary"
-                        class="bg-primary-950"
-                        disabled={subscribing}
-                    >
+                    <Button type="submit" size="lg" color="primary" class="bg-primary-950" disabled={subscribing}>
                         {#if subscribing}
                             Só um momento...
                         {:else}
@@ -99,9 +96,7 @@
                     </Button>                     -->
                 </form>
                 {#if form?.error}
-                    <div
-                        class="hidden md:flex text-red-600 text-base text-center md:text-left mt-2"
-                    >
+                    <div class="hidden md:flex text-red-600 text-base text-center md:text-left mt-2">
                         {form.error}
                     </div>
                 {/if}

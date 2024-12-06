@@ -1,7 +1,7 @@
 import fs from "fs";
 import { dev } from "$app/environment";
 import matter from "gray-matter";
-import { fail, json } from "@sveltejs/kit";
+import { fail, json, redirect } from "@sveltejs/kit";
 import { BEEHIIV_API_KEY, BEEHIIV_PUBLICATION_ID } from "$env/static/private";
 import config from "$lib/config";
 
@@ -42,10 +42,13 @@ export const actions = {
                     description: data.get("description"),
                     error: "Ocorreu algum erro ao tentar assinar",
                 });
+            } else {
+                return { success: true };
+                // console.log(`Hey ${userEmail}!, you are now subscribed, now you will be redirected!`);
+                // redirect(303, "/obrigado");
             }
 
             // return json({ message: "Subscription successful!" });
-            console.log(`Hey ${userEmail}!, you are now subscribed!`);
         } catch (error: any) {
             return fail(500, {
                 description: data.get("description"),
@@ -69,7 +72,7 @@ export async function load({}) {
 
         const response = await fetch(`${config.baseUrl}/posts/${fileName}`);
         if (!response.ok) {
-            throw new Error(`Failed to fetch post ${fileName}.md: ${response.statusText}`);
+            throw new Error(`Failed to fetch post ${config.baseUrl}/posts/${fileName}: ${response.statusText}`);
         }
         const doc = await response.text();
         let { data, content } = matter(doc);

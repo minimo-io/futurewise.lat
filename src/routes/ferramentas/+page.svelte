@@ -17,15 +17,22 @@
     <Heading tag="h2" class="text-2xl my-4">Geração de Imagens com IA</Heading>
     <ul class="mt-4">
         <li>
-            <a href="https://www.img2go.com/pt" rel="nofollow noopener" target="_blank">
-                <ArrowUpRightFromSquareOutline class="pr-1 inline" />img2go
-            </a>
+            <a href="https://www.img2go.com/pt" rel="nofollow noopener" target="_blank"> img2go </a>
             - Em 🇧🇷Português
         </li>
         <li>
-            <a href="https://www.imagine.art/" rel="nofollow noopener" target="_blank">
-                <ArrowUpRightFromSquareOutline class="pr-1 inline" />Imagine.Art
+            <a href="https://www.imagine.art/" rel="nofollow noopener" target="_blank"> Imagine.Art </a>
+        </li>
+        <li>
+            <a href="https://labs.google/fx/pt/tools/image-fx" rel="nofollow noopener" target="_blank">
+                Imagen3 pela Deepmind
             </a>
+        </li>
+
+        <li>
+            <a href="https://huggingface.co/spaces/ginipick/FLUXllama" rel="nofollow noopener" target="_blank"
+                >FluxLLama em HuggingFace</a
+            >
         </li>
     </ul>
     <Heading tag="h2" class="text-2xl my-4">Desenvolvimento de Software com IA</Heading>
@@ -64,6 +71,15 @@
                 - ElevenLabs é uma empresa de IA de áudio que desenvolve modelos para gerar fala, vozes e efeitos
                 sonoros realistas em 32 idiomas, conhecida por sua síntese de fala natural e ferramentas de clonagem de
                 voz, tornando o conteúdo acessível em qualquer idioma e voz.
+            </span>
+        </li>
+        <li>
+            <a href="https://fish.audio/" rel="nofollow noopener" target="_blank">
+                <ArrowUpRightFromSquareOutline class="pr-1 inline" />FishAudio
+            </a>
+            <span>
+                - A FishAudio é uma empresa especializada em tecnologias de áudio, focando principalmente em modelos de
+                inteligência artificial para geração e manipulação de voz.
             </span>
         </li>
     </ul>
