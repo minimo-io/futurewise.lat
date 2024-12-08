@@ -1,5 +1,6 @@
 import { dev } from "$app/environment";
 const postNames: string[] = [
+    "promessas-da-ia-hype-realidade-e-limites.md",
     "da-seguranca-a-robos-o-que-esta-transformando-a-inteligencia-artificial.md",
     "elon-musk-leva-openai-ao-tribunal-novamente.md",
     "OpenAI-considera-desafiar-o-Google-com-um-navegador.md",
