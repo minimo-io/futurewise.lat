@@ -34,6 +34,11 @@
                 >FluxLLama em HuggingFace</a
             >
         </li>
+        <li>
+            <a href="https://huggingface.co/spaces/prithivMLmods/FLUX-LoRA-DLC" rel="nofollow noopener" target="_blank"
+                >FLUX-LoRA-DLC</a
+            >
+        </li>
     </ul>
     <Heading tag="h2" class="text-2xl my-4">Desenvolvimento de Software com IA</Heading>
     <ul class="mt-4">
