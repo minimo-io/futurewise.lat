@@ -1,17 +1,12 @@
 <script lang="ts">
-    import Header from "$components/Header.svelte";
-    import Footer from "$components/Footer.svelte";
     import "../app.css";
 
     let { children } = $props();
 </script>
 
-<div class="px-0 mx-auto">
-    <Header />
+<svelte:head>
+    <title>Futurewise \ Lab</title>
+    <meta name="description" content="Innovation & Development Lab experimenting with e-Commerce, Payments/Crypto, AI & Machines." />
+</svelte:head>
 
-    <main>
-        {@render children()}
-    </main>
-
-    <Footer />
-</div>
+{@render children()}
