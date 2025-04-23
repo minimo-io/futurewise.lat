@@ -27,12 +27,13 @@
         content="Innovation & Development Lab in the intersection between with e-Commerce, Payments/Crypto, AI & Machines."
     />
 </svelte:head>
+
 <div class="fixed w-full flex-col flex h-full items-center justify-center bg-black">
     <div
         class="fw-content flex flex-col relative items-center justify-center z-50 px-[20px] py-12 md:p-5 w-full m-[20px] border-white glass"
     >
         {#key key}
-            <main in:fade={{ duration: 150, easing: cubicInOut, delay: 0 }}>
+            <main in:fade={{ duration: 150, easing: cubicInOut, delay: 0 }} class="z-10">
                 {@render children()}
             </main>
         {/key}

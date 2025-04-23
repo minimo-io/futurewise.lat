@@ -9,7 +9,7 @@
     /* --font-body: Roboto, -apple-system, sans-serif; */
     --font-body: "Roboto Mono Variable", monospace;
     --font-mono: "Roboto Mono Variable", monospace;
-    --partial-border-color: #f9b826;
+    --partial-border-color: #f79319;
     font-family: var(--font-body);
 }
 *,

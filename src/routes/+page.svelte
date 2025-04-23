@@ -13,6 +13,12 @@
     });
 </script>
 
+<div
+    class="z-0
+md:bg-[linear-gradient(225deg,_#F79319_2%,_#00000000_2%)]
+bg-[linear-gradient(225deg,_#F79319_5%,_#00000000_5%)]
+h-full w-full absolute top-0 left-0"
+></div>
 <div class="z-20 justify-center flex flex-col items-center py-16 px-16">
     <!-- <div
         class="absolute top-0 right-0 w-10 h-10 bg-white shadow-inner transform rotate-45 rotate origin-top-right border"
@@ -47,12 +53,18 @@
             type="button"
             size={buttonSize}
             color="none"
-            class="text-xs rounded-none bg-transparent border text-white border-white"
+            class="text-xs rounded-none bg-transparent border text-white border-white hover:opacity-50"
             href="mailto:futurewise.lat@gmail.com"
         >
             Get&nbsp;in&nbsp;touch
         </Button>
-        <Button type="button" size={buttonSize} color="alternative" class="text-xs rounded-none" href="e-commerce">
+        <Button
+            type="button"
+            size={buttonSize}
+            color="alternative"
+            class="text-xs rounded-none border-none"
+            href="e-commerce"
+        >
             Projects
         </Button>
         <!-- <Button type="button" size={buttonSize} color="alternative" class="text-xs rounded-none">Investors</Button> -->
