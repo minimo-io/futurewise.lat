@@ -32,13 +32,13 @@ h-full w-full absolute top-0 left-0"
         Futurewise
     </a>
     <P
-        class="mt-3 md:mt-5 mx-[0px] max-w-md md:max-w-md text-center text-sm md:text-base antialiased leading-normal text-gray-100"
+        class="mt-3 md:mt-5 mx-[0px] max-w-md md:max-w-md text-center text-sm md:text-base antialiased leading-normal text-gray-100 z-50"
     >
         <strong>Innovation & Development Lab</strong>
         <!-- experimenting with -->
         in the intersection of
         <span class="text-nowrap">
-            <a href="/e-commerce/" class="">e-Commerce</a>
+            <a href="/e-commerce/">e-Commerce</a>
             -
         </span>
         <a href="/e-commerce/">Crypto Payments</a>
