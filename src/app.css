@@ -16,6 +16,7 @@
     transition: opacity 0.2s linear;
     /* outline: 2px solid lime; */
 }
+
 @layer base {
     body,
     html {
@@ -45,5 +46,54 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
+    }
+    a {
+        @apply hover:opacity-50;
+    }
+}
+
+@layer utilities {
+    .glass {
+        background: rgba(255, 255, 255, 0.1); /* Light transparent layer */
+        backdrop-filter: blur(6px); /* Frosted glass effect */
+        -webkit-backdrop-filter: blur(6px); /* For Safari */
+    }
+
+    .partial-border {
+        position: relative;
+        display: inline-block;
+    }
+
+    .partial-border::after {
+        --partial-border-height: 7px;
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        right: 0;
+        width: 0%; /* Initial width */
+        height: var(--partial-border-height);
+        border-bottom: var(--partial-border-height) solid var(--partial-border-color);
+        animation: border-grow 0.3s ease-in-out forwards; /* Animation on page load */
+    }
+
+    @keyframes border-grow {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .partial-border::after {
+            --partial-border-height: 4px;
+            bottom: -1px;
+        }
+    }
+    .partial-border-sm::after {
+        --partial-border-height: 3px;
+        bottom: -1px;
+        width: 100%;
     }
 }

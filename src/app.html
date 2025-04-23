@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="en-US">
     <head>
         <meta charset="utf-8" />
         <!-- Favicon -->
@@ -45,7 +45,7 @@
                             },
                         },
                         size: {
-                            value: 2,
+                            value: 4,
                             random: true,
                             anim: {
                                 enable: false,
@@ -59,13 +59,13 @@
                             distance: 150,
                             color: "#DDE3E9",
                             opacity: 0.8,
-                            width: 1.5,
+                            width: 2,
                         },
                         move: {
                             enable: true,
                             speed: 6,
                             direction: "none",
-                            random: false,
+                            random: true,
                             straight: false,
                             out_mode: "out",
                             bounce: false,
@@ -96,7 +96,7 @@
                                 speed: 3,
                             },
                             repulse: { distance: 200, duration: 0.4 },
-                            push: { particles_nb: 4 },
+                            push: { particles_nb: 20 },
                             remove: { particles_nb: 2 },
                         },
                     },
@@ -104,8 +104,5 @@
                 });
             }
         }
-        document.addEventListener("DOMContentLoaded", function () {
-            // loadParticles();
-        });
     </script>
 </html>
