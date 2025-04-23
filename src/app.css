@@ -2,6 +2,8 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "@fontsource-variable/roboto-mono";
+/* @import "@fontsource/jersey-10"; */
+@import "@fontsource/tiny5";
 
 :root {
     /* --font-body: Roboto, -apple-system, sans-serif; */
@@ -47,16 +49,16 @@
         background-size: cover;
         background-position: 50% 50%;
     }
-    a {
-        @apply hover:opacity-50;
+    a:not([role="button"]) {
+        @apply underline underline-offset-4  hover:opacity-50;
     }
 }
 
 @layer utilities {
     .glass {
         background: rgba(255, 255, 255, 0.1); /* Light transparent layer */
-        backdrop-filter: blur(6px); /* Frosted glass effect */
-        -webkit-backdrop-filter: blur(6px); /* For Safari */
+        backdrop-filter: blur(4px); /* Frosted glass effect */
+        -webkit-backdrop-filter: blur(4px); /* For Safari */
     }
 
     .partial-border {
@@ -65,15 +67,19 @@
     }
 
     .partial-border::after {
-        --partial-border-height: 7px;
+        --partial-border-height: 5px;
         content: "";
         position: absolute;
-        bottom: -5px;
-        right: 0;
+        bottom: -7px;
+        left: 0;
         width: 0%; /* Initial width */
         height: var(--partial-border-height);
         border-bottom: var(--partial-border-height) solid var(--partial-border-color);
         animation: border-grow 0.3s ease-in-out forwards; /* Animation on page load */
+    }
+
+    .fw-content {
+        width: calc(100% - 0px);
     }
 
     @keyframes border-grow {
@@ -81,14 +87,17 @@
             width: 0%;
         }
         to {
-            width: 100%;
+            width: 40%;
         }
     }
 
     @media (max-width: 768px) {
         .partial-border::after {
             --partial-border-height: 4px;
-            bottom: -1px;
+            bottom: -5px;
+        }
+        .fw-content {
+            width: calc(100% - 40px);
         }
     }
     .partial-border-sm::after {

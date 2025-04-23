@@ -22,12 +22,14 @@
 
 <svelte:head>
     <title>Futurewise \ Lab</title>
-    <meta name="description" content="Innovation & Development Lab experimenting with e-Commerce, Payments/Crypto, AI & Machines." />
+    <meta
+        name="description"
+        content="Innovation & Development Lab in the intersection between with e-Commerce, Payments/Crypto, AI & Machines."
+    />
 </svelte:head>
-<div class="fixed w-full flex-col flex h-full items-center justify-center">
+<div class="fixed w-full flex-col flex h-full items-center justify-center bg-black">
     <div
-        class="flex flex-col relative items-center justify-center z-50 px-[20px] py-12 md:p-20 glass border-[5px] md:border-8 h-full m-[10px] !border-black"
-        style="width: calc(100% - 20px);"
+        class="fw-content flex flex-col relative items-center justify-center z-50 px-[20px] py-12 md:p-5 w-full m-[20px] border-white glass"
     >
         {#key key}
             <main in:fade={{ duration: 150, easing: cubicInOut, delay: 0 }}>

@@ -22,6 +22,7 @@ export default {
             theme: {
                 fontFamily: {
                     mono: ["Roboto Mono Variable", "monospace"],
+                    retro: ["Tiny5", "system-ui"],
                 },
             },
             colors: {
