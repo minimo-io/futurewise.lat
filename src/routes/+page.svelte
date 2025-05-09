@@ -1,15 +1,15 @@
 <script lang="ts">
-    import { NavBrand, P, Button } from "flowbite-svelte";
+    // import { NavBrand, P, Button } from "flowbite-svelte";
     import { onMount } from "svelte";
 
-    import logo from "$lib/images/futurewise.svg";
-    import { LinkedinSolid, RocketSolid } from "flowbite-svelte-icons";
+    // import logo from "$lib/images/futurewise.svg";
+    // import { LinkedinSolid, RocketSolid } from "flowbite-svelte-icons";
 
-    let buttonSize: "xs" | "sm" | "md" | "lg" | "xl" | undefined = "sm";
+    // let buttonSize: "xs" | "sm" | "md" | "lg" | "xl" | undefined = "sm";
 
     onMount(() => {
         // @ts-ignore
-        loadParticles();
+        // loadParticles();
     });
 </script>
 
