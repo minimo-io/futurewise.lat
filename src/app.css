@@ -16,6 +16,8 @@
 *::after,
 *::before {
     transition: opacity 0.2s linear;
+    @apply transition-all duration-300 ease-in-out;
+
     /* outline: 2px solid lime; */
 }
 
@@ -24,33 +26,8 @@
     html {
         @apply overflow-x-hidden md:overflow-visible;
     }
-    button,
-    .fw-btn-hover {
-        @apply hover:outline hover:outline-primary-300;
-    }
-    p {
-        font-family: var(--font-mono);
-    }
-    pre {
-        max-width: 100%;
-        white-space: pre-wrap;
-        word-wrap: break-word;
-        @apply bg-gray-200 py-5 px-7 rounded-xl;
-    }
-    #particles-js {
-        /* z-index: 9; */
-        top: 0;
-        left: 0;
-        position: absolute !important;
-        background: transparent;
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 50%;
-    }
-    a:not([role="button"]) {
-        @apply underline underline-offset-4  hover:opacity-50;
+    body {
+        @apply bg-white;
     }
 }
 
@@ -59,50 +36,5 @@
         background: rgba(255, 255, 255, 0.1); /* Light transparent layer */
         backdrop-filter: blur(4px); /* Frosted glass effect */
         -webkit-backdrop-filter: blur(4px); /* For Safari */
-    }
-
-    .partial-border {
-        position: relative;
-        display: inline-block;
-    }
-
-    .partial-border::after {
-        --partial-border-height: 5px;
-        content: "";
-        position: absolute;
-        bottom: -7px;
-        left: 0;
-        width: 0%; /* Initial width */
-        height: var(--partial-border-height);
-        border-bottom: var(--partial-border-height) solid var(--partial-border-color);
-        animation: border-grow 0.3s ease-in-out forwards; /* Animation on page load */
-    }
-
-    .fw-content {
-        width: calc(100% - 0px);
-    }
-
-    @keyframes border-grow {
-        from {
-            width: 0%;
-        }
-        to {
-            width: 40%;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .partial-border::after {
-            --partial-border-height: 4px;
-            bottom: -5px;
-        }
-        .fw-content {
-            width: calc(100% - 40px);
-        }
-    }
-    .partial-border-sm::after {
-        --partial-border-height: 3px;
-        bottom: -1px;
-        width: 100%;
     }
 }
